@@ -1,0 +1,12 @@
+<h2>Financeiro</h2>
+<div>
+    <button onclick="gerarRelatorio()">Gerar Relatório</button>
+    <div id="relatorio"></div>
+</div>
+
+<script>
+    function gerarRelatorio() {
+        const relatorioDiv = document.getElementById('relatorio');
+        relatorioDiv.innerHTML = "<p>Relatório Financeiro gerado!</p>";
+    }
+</script>

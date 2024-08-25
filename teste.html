@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+    <style>
+        /* Estilo básico do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Barra de navegação lateral */
+        .sidebar {
+            width: 200px;
+            background-color: #4CAF50;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            color: white;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            background-color: #45a049;
+        }
+
+        /* Área principal do conteúdo */
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Tabela de pedidos */
+        .table-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Alertas à direita */
+        .alerts {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 250px;
+            background-color: #ff7043;
+            color: white;
+            padding: 20px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .alert-item {
+            background-color: #ffccbc;
+            color: #333;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .alert-item strong {
+            font-size: 18px;
+        }
+
+        /* Responsividade */
+        @media screen and (max-width: 768px) {
+            .sidebar, .alerts {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra lateral de navegação -->
+    <div class="sidebar">
+        <a href="#">Menu 1</a>
+        <a href="#">Menu 2</a>
+        <a href="#">Menu 3</a>
+        <a href="#">Menu 4</a>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <div class="header">
+            PEDIDO
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Status</th>
+                        <th>Cliente</th>
+                        <th>Entrega</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>43</td>
+                        <td>Enviado</td>
+                        <td>Juliana</td>
+                        <td>03/10/2022</td>
+                        <td>R$ 250,00</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>Pendente</td>
+                        <td>Eduardo</td>
+                        <td>01/10/2022</td>
+                        <td>R$ 300,00</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>Cancelado</td>
+                        <td>Eduardo</td>
+                        <td>30/09/2022</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Alertas -->
+    <div class="alerts">
+        <div class="alert-item">
+            <strong>6</strong> Pedidos entregues
+        </div>
+        <div class="alert-item">
+            <strong>2072</strong> Produtos no estoque
+        </div>
+        <div class="alert-item">
+            <strong>0</strong> Pedidos cancelados
+        </div>
+    </div>
+</body>
+</html>

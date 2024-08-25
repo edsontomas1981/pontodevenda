@@ -15,5 +15,13 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "node-sass": "^9.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edsontomas1981/pontodevenda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edsontomas1981/pontodevenda/issues"
+  },
+  "homepage": "https://github.com/edsontomas1981/pontodevenda#readme"
 }

@@ -85,3 +85,57 @@ button:hover {
     width: 15px;
   }
   
+  /* Tabela de pedidos */
+  .table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+  
+.produtos-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.botoes-acao{
+  background-color: #ffccbc !important;
+  height: 7em;
+  width: 7em;
+  margin: 1px;
+  border-color: #ffccbc;
+  color: black;
+}
+.botoes-acao :hover{
+  background-color: #d9b3a7;
+
+}
+
+.card-fixed-size {
+  width: 100%; /* Faz com que o cartão ocupe toda a largura da coluna */
+  max-width: 300px; /* Largura máxima para cada cartão */
+  height: 250px; /* Altura fixa para todos os cartões */
+}

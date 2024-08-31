@@ -38,19 +38,16 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="navbar-menu-wrapper d-flex align-items-center">
-            <h5 class="text-white">Dashboard</h5>
+            <h1 id="titulo" class="text-white" style="justify-content: baseline;">Home</h1>
           </div>  
         </div>
-
-
-
-      </nav>
+     </nav>
     </div>
     <div id="sidebar-placeholder">
       <nav class="bg-white sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav mt-5">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" id="btnHome" href="#">
               <img src="images/icons/1.png" alt="">
               <span class="menu-title">Home</span>
             </a>
@@ -144,12 +141,11 @@
     <!-- partial -->
     <div class="container-fluid">
       <div id="conteudo">
-
       </div>
     </div>
+    <div id="modalContainer">
+    </div>
   </div>
-
-
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -162,35 +158,12 @@
   <script src="js/misc.js"></script>
   <script src="js/chart.js"></script>
   <script src="js/maps.js"></script>
-
-
-  <script>
-    // Função para carregar um arquivo HTML e inserir em um elemento específico
-    function loadHTML(elementId, url) {
-      fetch(url)
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById(elementId).innerHTML = data;
-        })
-        .catch(error => console.error('Erro ao carregar o conteúdo:', error));
-    }
-    document.addEventListener('DOMContentLoaded', function () {
-      loadHTML('conteudo', 'home.html');
-      document.getElementById('btnPdv').addEventListener('click', async () => {
-        loadHTML('conteudo', 'pdv.html');
-      });
-    });
-
-        // Função para capturar o evento de tecla pressionada
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'F1') {
-        event.preventDefault(); // Evita a ação padrão do F1 (ajuda do navegador)
-        alert('F1 foi pressionado!');
-        // Aqui você pode chamar outra função ou realizar qualquer ação desejada
-      }
-    });
-
-  </script>
+  <script src="../js/configurações.js"></script>
+  <script src="../js/navbar/btnPdv.js"></script>
+  <script src="../js/navbar/btnHome.js"></script>
+  <script src="../utils/utils.js"></script>
+  <script src="../utils/pilhaDeModais.js"></script>
+  <script src="../utils/controleModais.js"></script>
 </body>
 
 </html>

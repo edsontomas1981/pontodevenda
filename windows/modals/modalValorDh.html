@@ -1,0 +1,31 @@
+<div class="modal fade" id="modalPgto">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Pagamento</h5>
+        <button type="button" onclick="closeModal()">X</button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-sm-6">
+          <label for="metodoPagamento">Método de Pagamento</label>
+          <select class="form-control form-select mb-3" id="metodoPagamento">
+            <option selected>Selecione</option>
+            <option value="1">Crédito</option>
+            <option value="2">Débito </option>
+            <option value="3">Dinheiro</option>
+          </select>
+        </div>  
+        <div class="col-sm-6">
+          <label for="valorPgto">Valor Pagamento</label>
+          <input type="text" class="form-control mb-3" id="valorPgto">
+        </div> 
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Aceitar</button>
+        <button type="button" class="btn btn-danger">Limpar</button>
+      </div>
+    </div>
+  </div>
+</div>

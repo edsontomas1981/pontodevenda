@@ -1,0 +1,42 @@
+<div class="modal fade" id="modalBuscaProduto">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Buscar Produtos</h5>
+        <button type="button" onclick="closeModal()">X</button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <label for="metodoPagamento">Produto(Código de Barras/Descrição)</label>
+            <input type="text" class="form-control mb-3" id="valorPgto">  
+          </div>  
+        </div>
+        <div>
+          <table class="table table-striped">
+            <thead>
+              <tr class="">
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Valor R$</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">7896714231143</th>
+                <td>Neosoro Solução Nasal Gotas</td>
+                <td>R$ 9,35</td>
+                <td><a href="#" class="btn btn-outline-info btn-sm">Selecionar</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Aceitar</button>
+        <button type="button" class="btn btn-danger">Limpar</button>
+      </div>
+    </div>
+  </div>
+</div>

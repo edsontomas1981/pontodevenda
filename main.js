@@ -8,17 +8,19 @@ function createWindow() {
         height: 800,
         autoHideMenuBar: true,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js'), // Verifique o caminho
+            preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true,
-            nodeIntegration: false,
-        },
+            enableRemoteModule: false,
+            nodeIntegration: false
+          },
     });
-
     const indexPath = path.join(__dirname, 'windows', 'index.html');
     mainWindow.loadFile(indexPath).catch(err => console.error("Erro ao carregar o arquivo HTML:", err));
 }
 
 app.on('ready', createWindow);
+
+console.log('Isso é um log no renderizador');
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {

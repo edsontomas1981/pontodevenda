@@ -1,3 +1,4 @@
+// main.js
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
@@ -5,13 +6,14 @@ function createWindow() {
     const mainWindow = new BrowserWindow({
         width: 1200,
         height: 800,
-        autoHideMenuBar: true, // Opcional: oculta a barra de menu
+        autoHideMenuBar: true,
         webPreferences: {
-            nodeIntegration: true,
+            preload: path.join(__dirname, 'preload.js'), // Verifique o caminho
+            contextIsolation: true,
+            nodeIntegration: false,
         },
     });
 
-    // Use path.join para construir o caminho correto para o index.html
     const indexPath = path.join(__dirname, 'windows', 'index.html');
     mainWindow.loadFile(indexPath).catch(err => console.error("Erro ao carregar o arquivo HTML:", err));
 }

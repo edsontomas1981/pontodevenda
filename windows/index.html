@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="../renderer.js"></script>
 
   <style>
     .card-fixed-size {
@@ -44,111 +45,48 @@
      </nav>
     </div>
     <div id="sidebar-placeholder">
-      <nav class="bg-white sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav mt-5">
-          <li class="nav-item active">
-            <a class="nav-link" id="btnHome" href="#">
-              <img src="images/icons/1.png" alt="">
-              <span class="menu-title">Home</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="btnPdv" href="#">
-              <img src="images/icons/004-coding.png" alt="">
-              <span class="menu-title">PDV</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="btnCadastros" href="#">
-              <img src="images/icons/010-office-material.png" alt="">
-              <span class="menu-title">Cadastros</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="btnContasAPagar" href="#">
-              <img src="images/icons/005-calendar.png" alt="">
-              <span class="menu-title">Contas à Pagar</span>
-            </a>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link" id="btnContasAPagar" href="#">
-              <img src="images/icons/10.png" alt="">
-              <span class="menu-title">Configurações</span>
-            </a>
-          </li>                
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="pages/ui-elements/buttons.html">
-              <img src="images/icons/4.png" alt="">
-              <span class="menu-title">Buttons</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/tables/index.html">
-              <img src="images/icons/5.png" alt="">
-              <span class="menu-title">Tables</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/charts/index.html">
-              <img src="images/icons/6.png" alt="">
-              <span class="menu-title">Charts</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/icons/index.html">
-              <img src="images/icons/7.png" alt="">
-              <span class="menu-title">Icons</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/ui-elements/typography.html">
-              <img src="images/icons/8.png" alt="">
-              <span class="menu-title">Typography</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#sample-pages" aria-expanded="false" aria-controls="sample-pages">
-              <img src="images/icons/9.png" alt="">
-              <span class="menu-title">Sample Pages<i class="fa fa-sort-down"></i></span>
-            </a>
-            <div class="collapse" id="sample-pages">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/samples/blank_page.html">
-                    Blank Page
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/samples/login.html">
-                    Login
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/samples/register.html">
-                    Register
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/samples/404.html">
-                    404
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/samples/500.html">
-                    500
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <img src="images/icons/10.png" alt="">
-              <span class="menu-title">Settings</span>
-            </a>
-          </li> -->
-        </ul>
-      </nav>
+<nav class="bg-white sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav mt-5">
+    <li class="nav-item active">
+      <a class="nav-link" id="btnHome" href="#">
+        <img src="images/icons/1.png" alt="">
+        <span class="menu-title">Home</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="btnPdv" href="#">
+        <img src="images/icons/004-coding.png" alt="">
+        <span class="menu-title">PDV</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="btnCadastros" href="#">
+        <img src="images/icons/010-office-material.png" alt="">
+        <span class="menu-title">Cadastro Produtos</span>
+      </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link" id="btnCadastroClientes" href="#">
+        <img src="images/icons/clientes.png" alt="">
+        <span class="menu-title">Cadastro Clientes</span>
+      </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link" id="btnContasAPagar" href="#">
+        <img src="images/icons/005-calendar.png" alt="">
+        <span class="menu-title">Contas a Pagar</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="btnConfig" href="#">
+        <img src="images/icons/10.png" alt="">
+        <span class="menu-title">Configurações</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      
     </div>
     <!-- partial -->
     <div class="container-fluid">
@@ -173,11 +111,13 @@
   <script src="js/chart.js"></script>
   <script src="js/maps.js"></script>
   <script src="../js/inicio.js"></script>
-  <script src="../js/configurações.js"></script>
+  <script src="../js/configuracoes.js"></script>
   <script src="../js/navbar/btnPdv.js"></script>
   <script src="../js/navbar/btnHome.js"></script>
   <script src="../js/navbar/btnCadastros.js"></script>
   <script src="../js/navbar/btnContasAPagar.js"></script>
+  <script src="../js/navbar/btnCadastroClientes.js"></script>
+  <script src="../js/navbar/btnConfig.js"></script>
   <script src="../utils/utils.js"></script>
   <script src="../utils/pilhaDeModais.js"></script>
   <script src="../utils/controleModais.js"></script>

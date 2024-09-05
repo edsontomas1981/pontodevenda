@@ -1,0 +1,77 @@
+<div class="row row-offcanvas row-offcanvas-right mt-5" id="configuracoesSistema">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Configurações do Sistema</h2>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="local_banco_dados">Localização do Banco de Dados:</label>
+                <input type="text" class="form-control" id="local_banco_dados" name="local_banco_dados" required>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="frequencia_backup">Frequência de Backup:</label>
+                <select id="frequencia_backup" class="form-control" name="frequencia_backup" required>
+                    <option value="diario">Diário</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="mensal">Mensal</option>
+                </select>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="email_notificacoes">E-mail para Notificações:</label>
+                <input type="email" class="form-control" id="email_notificacoes" name="email_notificacoes" required>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="tema_sistema">Tema do Sistema:</label>
+                <select id="tema_sistema" class="form-control" name="tema_sistema">
+                    <option value="claro">Claro</option>
+                    <option value="escuro">Escuro</option>
+                </select>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="idioma_sistema">Idioma do Sistema:</label>
+                <select id="idioma_sistema" class="form-control" name="idioma_sistema" required>
+                    <option value="pt-br">Português (BR)</option>
+                    <option value="en-us">Inglês (US)</option>
+                    <option value="es-es">Espanhol (ES)</option>
+                </select>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="politica_senha">Política de Senha:</label>
+                <select id="politica_senha" class="form-control" name="politica_senha" required>
+                    <option value="simples">Simples</option>
+                    <option value="complexa">Complexa (Maiúsculas, Minúsculas, Números e Símbolos)</option>
+                </select>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="auth_dois_fatores">Autenticação de Dois Fatores:</label>
+                <select id="auth_dois_fatores" class="form-control" name="auth_dois_fatores" required>
+                    <option value="nao">Não</option>
+                    <option value="sim">Sim</option>
+                </select>
+            </div>
+
+            <div class="col-sm-4">
+                <label for="endereco_logo">Endereço do Logotipo:</label>
+                <input type="text" class="form-control" id="endereco_logo" name="endereco_logo">
+            </div>
+
+            <div class="col-sm-4">
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" class="form-control" name="observacoes" rows="4" cols="50"></textarea>
+            </div>
+
+            <button class="btn btn-primary mt-3" id="btnSalvaConfig">Salvar Configurações</button>
+        </div>
+    </div>
+</div>
+
+
+
+

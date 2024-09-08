@@ -14003,4 +14003,12 @@ input {
   border: solid 1px #ebebeb;
   color: #1c2c3f; }
 
+  .card-fixed-size {
+    width: 100%; /* Faz com que o cartão ocupe toda a largura da coluna */
+    max-width: 900px; /* Largura máxima para cada cartão */
+    height: 400px; /* Altura fixa para todos os cartões */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do cartão */
+    overflow-y: auto; /* Permite rolar o conteúdo se ele ultrapassar a altura do cartão */
+}
+
 /*# sourceMappingURL=maps/style.css.map */

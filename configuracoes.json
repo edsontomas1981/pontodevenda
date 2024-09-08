@@ -1,0 +1,42 @@
+{
+  "licenca": "teste",
+  "enderecoLogotipo": "/home/edson/Projetos/pdv",
+  "nomeApp": "MeuAppPDV",
+  "versao": "1.0.0",
+  "autor": "Edson",
+  "tema": {
+    "corPrimaria": "#3498db",
+    "corSecundaria": "#2ecc71",
+    "fonte": "Arial"
+  },
+  "database": {
+    "tipo": "SQLite",
+    "caminho": "/home/edson/Projetos/pdv/database/app.db"
+  },
+  "empresa": {
+    "nome": "Minha Empresa",
+    "cnpj": "12.345.678/0001-99",
+    "endereco": "Rua Exemplo, 123 - São Paulo, SP",
+    "telefone": "(11) 1234-5678",
+    "email": "contato@minhaempresa.com"
+  },
+  "impressora": {
+    "modelo": "Epson TM-T20",
+    "porta": "COM3",
+    "tipoPapel": "80mm"
+  },
+  "configuracoesSistema": {
+    "idioma": "pt-BR",
+    "moeda": "BRL",
+    "formatoData": "DD/MM/YYYY"
+  },
+  "permissoes": {
+    "admin": true,
+    "caixa": false,
+    "supervisor": true
+  },
+  "paths": {
+    "backup": "/home/edson/Projetos/pdv/backup",
+    "logs": "/home/edson/Projetos/pdv/logs"
+  }
+}
